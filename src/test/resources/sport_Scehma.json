@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome7",
+    "definitions": {
+        "Welcome7": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "game": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Game"
+                    }
+                }
+            },
+            "required": [
+                "game"
+            ],
+            "title": "Welcome7"
+        },
+        "Game": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "player": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "Jersy": {
+                    "type": "string",
+                    "format": "integer"
+                }
+            },
+            "required": [
+                "Jersy",
+                "country",
+                "name",
+                "player"
+            ],
+            "title": "Game"
+        }
+    }
+}
